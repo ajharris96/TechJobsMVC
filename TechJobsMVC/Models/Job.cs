@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text.RegularExpressions;
+
 namespace TechJobsMVC.Models
 {
     public class Job
@@ -52,12 +54,7 @@ namespace TechJobsMVC.Models
                 PositionType.Value = "Data not available";
             }
 
-            output = string.Format("\nID: %d\n" +
-                    "Name: %s\n" +
-                    "Employer: %s\n" +
-                    "Location: %s\n" +
-                    "Position Type: %s\n" +
-                    "Core Competency: %s\n", Id, Name, Employer, Location, PositionType, CoreCompetency);
+            output = string.Format("\nID: {0}\nName: {1}\nEmployer: {2}\nLocation: {3}\nPosition Type: {4}\nCore Competency: {5}\n", Id, Name, Employer, Location, PositionType, CoreCompetency);
             return output;
         }
 
