@@ -23,22 +23,21 @@
     </tr>
     <tr>
         <td>
-            Employer: @job.Employer
+            Employer: <a asp-controller="List" asp-action="Jobs" asp-route-column="employer" asp-route-value=@job.Employer>@job.Employer</a>
         </td>
     </tr>
     <tr>
         <td>
-            Location: @job.Location
+            Location: <a asp-controller="List" asp-action="Jobs" asp-route-column="location" asp-route-value=@job.Location>@job.Location</a>
         </td>
     </tr>
     <tr>
         <td>
-            Position Type: @job.PositionType
-        </td>
+            Position Type: <a asp-controller="List" asp-action="Jobs" asp-route-column="positionType" asp-route-value=@job.PositionType>@job.PositionType</a>
     </tr>
     <tr>
         <td>
-            Skill: @job.CoreCompetency
+            Skill: <a asp-controller="List" asp-action="Jobs" asp-route-column="coreCompetency" asp-route-value=@job.CoreCompetency>@job.CoreCompetency</a>
         </td>
     </tr>
 </table>

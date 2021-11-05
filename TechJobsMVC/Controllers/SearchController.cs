@@ -17,7 +17,7 @@ namespace TechJobsMVC.Controllers
         {
             if (ViewBag.check == null)
             {
-                ViewBag.check = "All";
+                ViewBag.check = "all";
             }
             
             ViewBag.columns = ListController.ColumnChoices;
