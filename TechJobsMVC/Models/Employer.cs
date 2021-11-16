@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 namespace TechJobsMVC.Models
 {
     public class Employer : JobField
@@ -6,3 +6,4 @@ namespace TechJobsMVC.Models
         public Employer(string value) : base(value){}
     }
 }
+ 

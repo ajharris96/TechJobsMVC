@@ -5,4 +5,5 @@ namespace TechJobsMVC.Models
     {
         public CoreCompetency(string value) : base(value){}
     }
-}
+} 
+ 
